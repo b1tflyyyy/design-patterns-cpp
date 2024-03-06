@@ -1,7 +1,10 @@
 ## Design Patterns written in C++ (examples)
 
 ## Goal of the project:
-This project was created to show examples of different design patterns.
+- This project was created to show examples of different design patterns.
+
+## Code Style
+- C++ AStyle code style was used for this project.
 
 ## Tech stack
 - CMake 3.14
@@ -11,7 +14,7 @@ This project was created to show examples of different design patterns.
 - [x] Factory Method
 - [ ] Abstract Factory
 - [ ] Builder
-- [ ] Singleton
+- [x] Singleton (Thread-Safe Version)
 - [ ] Prototype
 - [ ] Adapter
 - [ ] Bridge
