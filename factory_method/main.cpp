@@ -8,26 +8,26 @@ public:
     virtual ~IProduct() = default;
 };
 
-class Car : public IProduct /* Specific class */
+class ACar : public IProduct /* Specific class */
 {
 public:
     void Drive() override
     {
-        std::cout << "Car drive\n";
+        std::cout << "ACar drive\n";
     }
 
-    ~Car() override = default;
+    ~ACar() override = default;
 };
 
-class Motorcycle : public IProduct /* Specific class */
+class AMotorcycle : public IProduct /* Specific class */
 {
 public:
     void Drive() override
     {
-        std::cout << "Motorcycle drive\n";
+        std::cout << "AMotorcycle drive\n";
     }
 
-    ~Motorcycle() override = default;
+    ~AMotorcycle() override = default;
 };
 
 /* -------------------------------------- Creator Part -------------------------------------- */
@@ -38,36 +38,36 @@ public:
     virtual ~ICreator() = default;
 };
 
-class Creator_Car : public ICreator /* Specific class */
+class ACreator_Car : public ICreator /* Specific class */
 {
 public:
     IProduct* Create_Product() override
     {
-        return new Car();
+        return new ACar();
     }
 
-    ~Creator_Car() override = default;
+    ~ACreator_Car() override = default;
 };
 
-class Creator_Motorcycle : public ICreator /* Specific class */
+class ACreator_Motorcycle : public ICreator /* Specific class */
 {
 public:
     IProduct* Create_Product() override
     {
-        return new Motorcycle();
+        return new AMotorcycle();
     }
 
-    ~Creator_Motorcycle() override = default;
+    ~ACreator_Motorcycle() override = default;
 };
 
 int main()
 {
-    ICreator* creator = new Creator_Car();
+    ICreator* creator = new ACreator_Car();
 
     IProduct* car = creator->Create_Product();
     delete creator;
 
-    creator = new Creator_Motorcycle();
+    creator = new ACreator_Motorcycle();
 
     IProduct* moto = creator->Create_Product();
     delete creator;
