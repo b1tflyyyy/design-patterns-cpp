@@ -12,7 +12,7 @@
 
 ## Status of realized patterns:
 - [x] Factory Method
-- [ ] Abstract Factory
+- [x] Abstract Factory
 - [ ] Builder
 - [x] Singleton (Thread-Safe Version)
 - [ ] Prototype
