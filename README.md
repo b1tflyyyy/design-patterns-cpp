@@ -15,7 +15,7 @@
 - [x] Abstract Factory
 - [ ] Builder
 - [x] Singleton (Thread-Safe Version)
-- [ ] Prototype
+- [x] Prototype
 - [ ] Adapter
 - [ ] Bridge
 - [ ] Composite
